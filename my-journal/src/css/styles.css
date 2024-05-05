@@ -8,6 +8,9 @@
 html{
   font-size: small;
 }
+body{
+  background-color: #F2F6F9;
+}
 .standard{
   width: 100%;
   max-width: 1260px;
@@ -133,4 +136,84 @@ html{
 }
 .font-author-editoriale{
   font-size:15px; color: grey
+}
+.section-title{
+  color: #000;
+  border-bottom: 1px solid #c8d7e1;
+  padding-top: 24px;
+  font-size: 21px;
+  max-width: fit-content;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+.article-title{
+  font-size:42px;
+  font-weight: bold;
+}
+.article-top-title{
+  color:black;
+  font-weight: bold;
+}
+.of4{
+  font-size: 20px;
+  font-weight: bold;
+}
+.under_section_title{
+  border-bottom: 1px solid #C8D7E1;
+  padding-bottom: 0;
+  margin-right: 2px
+}
+.image-button-container{
+  position: relative;
+}
+.image-button-big{
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  height: 30%;
+}
+.top-2-side{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.image-button-tiny{
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  height: 30%;
+  padding: 0;
+}
+.video-text-tiny{
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 21px;
+  color: #4c4c4c;
+  margin-bottom: 6px;
+}
+.video-tiny-border{
+  border-bottom: 2px solid #CCC;
+  padding-bottom: 15px;
 }
