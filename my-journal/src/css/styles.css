@@ -1,4 +1,6 @@
-
+a{
+  background-color: transparent;
+}
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +109,9 @@ body{
   }
   #sideBar{
     display: none;
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
 
   }
   #firstTopArticle2{
@@ -198,7 +203,6 @@ body{
   background-color: #555;
   color: white;
   font-size: 16px;
-  padding: 12px 24px;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -240,4 +244,17 @@ body{
 }
 .titleOfThree{
   color: #2B628E;
+}
+.sidebar_article{
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 15px;
+}
+#footer{
+  background: #073860;
+  color: white;
+  text-decoration: white;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
 }
