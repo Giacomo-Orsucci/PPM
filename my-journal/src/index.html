@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>I parziale PPM</title>
 </head>
@@ -20,7 +20,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
 
-                            <div class="dropdown">
+                            <div class="dropdown show">
                                 <button class="btn dropdown-toggle" id="dropDownNavButton"
                                         aria-haspopup="true" type="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -28,18 +28,18 @@
                                 </button>
 
                                 <div class="dropdown-menu" data-bs-theme="light" aria-labelledby="dropdownNavButton" id="topDrop" >
-                                    <div class="row row-bordered">
-                                        <div class="col ">
-                                            <a>LA STAMPA</a>
+                                    <div class="row" style="border-bottom: 1px solid #CCC; padding-top: 20px; margin-left: 10px; margin-right: 10px;">
+                                        <div class="col-3">
+                                            <a href="#">LA STAMPA</a>
                                         </div>
-                                        <div class="col ">
-                                            <a>IL SECOLO XIX</a>
+                                        <div class="col-3">
+                                            <a href="#">IL SECOLO XIX</a>
                                         </div>
-                                        <div class="col ">
-                                            <a>LA PROVINCIA PAVESE</a>
+                                        <div class="col-3">
+                                            <a href="#">LA PROVINCIA PAVESE</a>
                                         </div>
-                                        <div class="col ">
-                                            <a>LA SENTINELLA DEL CANAVESE</a>
+                                        <div class="col-3">
+                                            <a href="#">LA SENTINELLA DEL CANAVESE</a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -62,13 +62,6 @@
                 <div class="collapse navbar-collapse navbar-blue-background justify-content-end">
                     <ul class="navbar-nav">
 
-
-                        <li class = "nav-item">
-
-                        </li>
-
-                        <li class="nav-item">
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style="color: white">ABBONATI </a>
                         </li>
@@ -79,7 +72,6 @@
                             <a class="nav-link" href="#" style="color: white">ACCEDI</a>
                         </li>
 
-
                     </ul>
                 </div>
             </nav>
@@ -87,31 +79,36 @@
     </div>
 
 <div class="d-flex justify-content-center" > <!-- middle header -->
-    <div class="d-flex standard justify-content-center"  > <!-- middle header -->
+    <div class="d-flex standard justify-content-center"  >
 
             <div class="container justify-content-center padding-margin-0 standard" style="padding-left: 25px; padding-right: 20px" >
                 <div class="row justify-content-center" style="margin-top: 30px">
-                    <p style="text-align: center; font-size: 13px; margin-right: 15px">
+                    <p style="text-align: center; font-size: 13px; margin-right: 15px; max-width: fit-content; color: #073860">
                         8 maggio 2024 - Aggiornato alle 11:27
                     </p>
-                        <div>
+                        <div class="col-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-rain" viewBox="0 0 16 16">
                             <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 0 1-.948-.316l1-3a.5.5 0 0 1 .632-.317m3 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317m.247-6.998a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2"/>
                             </svg>
                         </div>
 
                 </div>
-                <div class="row justify-content-between">
+                <div class="row justify-content-between" style="color: #2E4761; font-weight: bold; font-style: normal">
 
-                    <div>
+                    <div class="col-auto">
                         <a class="nav-link" href="#" style="line-height: 130px; min-width: fit-content">
-                            <i class="bi bi-list">MENU</i>
+                            <i class="bi bi-list" style=""></i> MENU
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" id="logo">
+                            <figure>
+                                <img src="https://placehold.co/350x140" alt="Place holder logo giornale">
+                            </figure>
                         </a>
                     </div>
 
-                    <a href="index.html" id="logo"><img src="https://placehold.co/350x140"></a>
-
-                    <div>
+                    <div class="col-auto">
                         <a class="nav-link" href="#" style="line-height: 130px">
                             CERCA <i class="bi bi-search"></i>
                         </a>
@@ -122,75 +119,71 @@
                     <p style="text-align: center; font-size: 13px; color: #3D5061; font-style: oblique">
                         Direttore Andrea Malaguti
                     </p>
-
                 </div>
-
-
             </div>
-
-
     </div>
 </div>
 
     <div class="d-flex justify-content-center nav-bottom-border " > <!-- bottom header -->
         <div class="container text-center standard" id="nav-bot" >
             <div class="row align-items-center scroll" style="overflow: auto" >
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link " href="#">
                         UCRAINA
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         VIDEO
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         IL GUSTO
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         GREEN&BLUE
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         LA ZAMPA
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         ITALIAN TECH
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         SALUTE
                     </a>
                 </div>
-                <div class="col-sm-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-sm-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         TUTTOLIBRI
                     </a>
                 </div>
                 <div class="col-sm">
-                    p
+
                 </div>
 
-
-                <div class="col-sm-auto nav-bottom-li-border">
-                    TORINO
+                <div class="col-sm-auto nav-bottom-li-border" style="color: black">
+                    <a class="nav-link" href="#">
+                        TORINO
+                    </a>
                 </div>
-                <div class="col-sm-auto ">
-                    EDIZIONI LOCALI
+                <div class="col-sm-auto" style="color: black">
+                    <a class="nav-link" href="#">
+                        EDIZIONI LOCALI
+                    </a>
                 </div>
             </div>
         </div>
-
     </div>
-
 </header>
 
 
@@ -208,7 +201,7 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" title="ABBONATI" href="#" style="color: #527D9F; margin-left: 15px ">
+                            <a class="nav-link" title="ABBONATI" href="#" style="color: #073860; margin-left: 15px; font-weight: bold">
                                 ABBONATI
                             </a>
                         </li>
@@ -221,8 +214,10 @@
 
                         <li class="nav-item">
                             <div>
-                                <a href="index.html" style="margin-right: 15px" >
-                                    <img src="https://placehold.co/22x22">
+                                <a href="#" style="margin-right: 15px" >
+                                    <figure>
+                                        <img src="https://placehold.co/22x22" alt="Place holder s logo"/>
+                                    </figure>
                                 </a>
                             </div>
                         </li>
@@ -236,8 +231,6 @@
     <div class="d-flex justify-content-center " style="margin-top: 10px"> <!-- mobile middle header -->
         <div class="d-flex justify-content-between standard" >
             <div >
-
-
                     <a class="navbar-brand" href="#" style="margin-left: 15px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -251,21 +244,24 @@
 
             </div>
             <div >
-                <a href="index.html"><img src="https://placehold.co/176x21"></a>
+                <a href="#">
+                    <figure>
+                        <img src="https://placehold.co/176x21" alt="Place holder logo giornale per mobile"/>
+                    </figure>
+                </a>
             </div>
 
             <div style="margin-right: 15px">
-                <a class="nav-link" href="#" >
+                <a class="nav-link" href="#" style="font-weight: bold">
                     ACCEDI
                 </a>
             </div>
         </div>
-
     </div>
 
     <div class=" d-flex justify-content-center navbar-row-collapse" > <!-- mobile date section header -->
         <div class="d-flex justify-content-center standard">
-            <p>
+            <p style="color: #073860">
                 28 aprile 2024 - Aggiornato alle 16:13
             </p>
         </div>
@@ -275,42 +271,42 @@
     <div class="d-flex justify-content-center nav-bottom-border "> <!-- mobile bottom header -->
         <div class="container text-center standard" >
             <div class="row align-items-center scroll">
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link " href="#">
                         UCRAINA
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         VIDEO
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         IL GUSTO
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         GREEN&BLUE
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         LA ZAMPA
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         ITALIAN TECH
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         SALUTE
                     </a>
                 </div>
-                <div class="col-auto nav-bottom-li-border" style="background: yellow">
+                <div class="col-auto nav-bottom-li-border">
                     <a class="nav-link" href="#">
                         TUTTOLIBRI
                     </a>
@@ -326,36 +322,33 @@
 
 
 
-
-
-
-
-
-
 <!-- soccer section -->
 
-<div class="container text-center standard" id="soccer-bar">
+<div class="container text-center standard" style="margin-top: 15px" id="soccer-bar">
     <!-- first row -->
         <div class="row align-items-center padding-margin-0" >
             <div class="col-sm padding-margin-0">
-                <div class="row align-items-center padding-margin-0">
+                <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px; padding-right: 5px">
                     <div class="col-sm-auto padding-margin-0 ">
 
-                        <a href="index.html" class="padding-margin-0" >
-                            <img src="https://placehold.co/96x48" alt=""/>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+
                         </a>
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
 
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0" style="padding-top:2px">
+                            <p class="padding-margin-0">
                                 28/04
                             </p>
 
                         </div>
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0">
+                            <p class="padding-margin-0" style="background: white">
                                 ore <br>
                                 15:00
                             </p>
@@ -364,59 +357,35 @@
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
-
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-sm padding-margin-0" style="background: yellow">
-                <div class="row align-items-center padding-margin-0">
-                    <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
-
-                    </div>
-                    <div class="col-sm-auto padding-margin-0 ">
-
-                        <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0" style="padding-top:2px">
-                                28/04
-                            </p>
-
-                        </div>
-                        <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0">
-                                ore <br>
-                                15:00
-                            </p>
-                        </div>
-
-
-                    </div>
-                    <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
-
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
                     </div>
                 </div>
 
             </div>
-            <div class="col-sm padding-margin-0" style="background: yellow">
-                <div class="row align-items-center padding-margin-0">
+            <div class="col-sm padding-margin-0">
+                <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
 
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0" style="padding-top:2px">
+                            <p class="padding-margin-0">
                                 28/04
                             </p>
 
                         </div>
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0">
+                            <p class="padding-margin-0" style="background: white">
                                 ore <br>
                                 15:00
                             </p>
@@ -425,26 +394,72 @@
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm padding-margin-0">
+                <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
+                    <div class="col-sm-auto padding-margin-0 ">
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-auto padding-margin-0 ">
+
+                        <div class="row align-items-center padding-margin-0">
+                            <p class="padding-margin-0">
+                                28/04
+                            </p>
+
+                        </div>
+                        <div class="row align-items-center padding-margin-0">
+                            <p class="padding-margin-0" style="background: white">
+                                ore <br>
+                                15:00
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-auto padding-margin-0 ">
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                 </div>
             </div>
-            <div class="col-sm padding-margin-0" style="background: yellow">
-                <div class="row align-items-center padding-margin-0">
+            <div class="col-sm padding-margin-0">
+                <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
 
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0" style="padding-top:2px">
+                            <p class="padding-margin-0">
                                 28/04
                             </p>
 
                         </div>
-                        <div class="row align-items-center padding-margin-0">
+                        <div class="row align-items-center padding-margin-0" style="background: white">
                             <p class="padding-margin-0">
                                 ore <br>
                                 15:00
@@ -454,36 +469,47 @@
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                 </div>
             </div>
-            <div class="col-sm padding-margin-0" style="background: yellow">
-                <div class="row align-items-center padding-margin-0">
+            <div class="col-sm padding-margin-0">
+                <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
 
                         <div class="row align-items-center padding-margin-0">
-                            <p class="padding-margin-0" style="padding-top:2px">
+                            <p class="padding-margin-0">
                                 28/04
                             </p>
 
                         </div>
-                        <div class="row align-items-center padding-margin-0">
+                        <div class="row align-items-center padding-margin-0" style="background: white">
                             <p class="padding-margin-0">
                                 ore <br>
                                 15:00
                             </p>
                         </div>
 
-
                     </div>
                     <div class="col-sm-auto padding-margin-0 ">
-                        <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                        <a href="#" class="padding-margin-0" >
+                            <figure>
+                                <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                            </figure>
+                        </a>
 
                     </div>
                 </div>
@@ -491,17 +517,21 @@
         </div>
 
     <!-- second row -->
-    <div class="row align-items-center padding-margin-0" style="border-bottom: 2px solid #CCC">
+    <div class="row align-items-center padding-margin-0" style="border-bottom: 2px solid #CCC; margin-top: 2px; padding-bottom: 15px">
         <div class="col-sm padding-margin-0">
-            <div class="row align-items-center padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
@@ -516,29 +546,37 @@
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
 
         </div>
-        <div class="col-sm padding-margin-0" style="background: yellow">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-sm padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -547,28 +585,36 @@
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
         </div>
-        <div class="col-sm padding-margin-0" style="background: yellow">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-sm padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -577,27 +623,35 @@
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-sm padding-margin-0" style="background: yellow">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-sm padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -606,27 +660,35 @@
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-sm padding-margin-0" style="background: yellow">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-sm padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; margin-right: 2px">
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -635,7 +697,11 @@
 
                 </div>
                 <div class="col-sm-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
@@ -647,23 +713,28 @@
 
 <div class="container text-center standard " id="mobile-soccer-bar">
     <!-- first and unique row -->
-    <div class="row align-items-center padding-margin-0 mobile-soccer-bar-content" >
+    <div class="row align-items-center padding-margin-0 mobile-soccer-bar-content" style="margin-top: 15px; padding-bottom: 15px" >
         <div class="col-auto padding-margin-0" style="margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -672,28 +743,36 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
 
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
-                    <div class="row align-items-center padding-margin-0">
+                    <div class="row align-items-center padding-margin-0" style="background: white">
                         <p class="padding-margin-0">
                             ore <br>
                             15:00
@@ -703,28 +782,36 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -733,27 +820,35 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -762,27 +857,35 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -791,28 +894,36 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
 
         <div class="col-auto padding-margin-0 " style="margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -821,29 +932,37 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
 
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -852,28 +971,36 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
 
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -882,27 +1009,35 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -911,27 +1046,35 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
         </div>
-        <div class="col-auto padding-margin-0" style="background: yellow; margin-right: 5px">
-            <div class="row align-items-center padding-margin-0">
+        <div class="col-auto padding-margin-0" style="margin-right: 5px">
+            <div class="row align-items-center padding-margin-0 match-style" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-right: 2px">
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
 
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0" style="padding-top:2px">
+                        <p class="padding-margin-0">
                             28/04
                         </p>
 
                     </div>
                     <div class="row align-items-center padding-margin-0">
-                        <p class="padding-margin-0">
+                        <p class="padding-margin-0" style="background: white">
                             ore <br>
                             15:00
                         </p>
@@ -940,7 +1083,11 @@
 
                 </div>
                 <div class="col-auto padding-margin-0 ">
-                    <a href="index.html" class="padding-margin-0" ><img src="https://placehold.co/96x48" alt=""/> </a>
+                    <a href="#" class="padding-margin-0" >
+                        <figure>
+                            <img src="https://placehold.co/96x48" alt="Place holder logo squadra calcio"/>
+                        </figure>
+                    </a>
 
                 </div>
             </div>
@@ -956,7 +1103,7 @@
 <!-- gli editoriali -->
 
 
-<div class="container standard">
+<div class="container standard" style="margin-top: 20px">
     <div class="row align-items-start" >
 
         <h2 id="editoriale">
@@ -969,10 +1116,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 1 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 1 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element" href="#"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -982,10 +1131,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 2 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 2 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element" href="#"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -995,10 +1146,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4 ">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 3 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 3 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -1008,10 +1161,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4 ">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 4 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 4 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element" href="#"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -1021,10 +1176,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4 ">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 5 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 5 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element" href="#"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -1034,10 +1191,12 @@
             <article class="border-editoriale">
                 <div class="row">
                     <div class="col-4 ">
-                        <img src="https://placehold.co/64x73" alt="immagine autore articolo 6 scrollbar alta"/>
+                        <a href="#">
+                            <img src="https://placehold.co/64x73" alt="immagine autore articolo 6 scrollbar alta"/>
+                        </a>
                     </div>
                     <div class="col-8 padding-margin-0">
-                        <p class="margin-editoriale-element"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></p>
+                        <a class="margin-editoriale-element" href="#"> <b>Lorem ipsum <br> dolor sit amet, <br> consectetur adipisicing <br> elit </b> <br></a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </div>
                 </div>
@@ -1064,20 +1223,20 @@
             <div class="col-12 col-md-8" style="margin-left: 15px; padding-left: 15px; font-size: 15px" >
                 <div>
                     <p class="article-top-title"> LE CARTE</p>
-                    <h2 class="article-title">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-                    </h2>
+                    <a href="#">
+                        <h2 class="article-title">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h2>
+                    </a>
                 </div>
-
             </div>
             <div class="col-12 col-md-3" id="firstTopArticle2">
-                <figure>
-                    <img alt="Immagine documenti" src="media/documents.jpg" class="img-fluid"/>
-                </figure>
-
+                <a href="#">
+                    <figure>
+                        <img alt="Immagine documenti" src="media/documents.jpg" class="img-fluid"/>
+                    </figure>
+                </a>
             </div>
-
     </div>
 </div>
 
@@ -1094,48 +1253,58 @@
                 </div>
                 <div class="row d-flex justify-content-start" style="margin-left:15px; padding-right: 15px; padding-top: 15px">
                     <article style="color: #0d4a7c;">
-                        <figure>
-                            <img alt="Immagine spiaggia tropicale" src="media/beach.jpg" class="img-fluid"/>
-                        </figure>
+                        <a href="#">
+                            <figure>
+                                <img alt="Immagine spiaggia tropicale" src="media/beach.jpg" class="img-fluid"/>
+                            </figure>
+                        </a>
                         <div>
                             <p class="article-top-title"> IL CASO</p>
-                            <h2 class="article-title">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Alias aliquid aspernatur corporis culpa delectus excepturi
-                                facere illo impedit
-                            </h2>
+                            <a href="#">
+                                <h2 class="article-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias aliquid aspernatur corporis culpa
+                                </h2>
+                            </a>
                         </div>
                     </article>
                 </div>
                 <div class="row d-flex justify-content-start" style="margin-left:15px; padding-right: 15px; margin-top: 15px">
                     <div class="col-12 col-md-6" style="padding-left:0">
                         <article style="color: #0d4a7c;">
-                            <figure>
-                                <img alt="Immagine ponte al tramonto" src="media/bridge-sunset.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="Immagine ponte al tramonto" src="media/bridge-sunset.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <div>
                                 <p class="article-top-title"> GAETA</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Alias aliquid aspernatur corporis culpa delectus excepturi
-                                    facere illo impedit
-                                </h2>
-
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Alias aliquid aspernatur corporis culpa delectus excepturi
+                                        facere illo impedit
+                                    </h2>
+                                </a>
                             </div>
                         </article>
                     </div>
                     <div class="col-12 col-md-6" style="padding-left:0">
                         <article style="color: #0d4a7c;">
-                            <figure>
-                                <img alt="Immagine ponte nel mare" src="media/bridge-in-the-ocean.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="Immagine ponte nel mare" src="media/bridge-in-the-ocean.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <div>
                                 <p class="article-top-title"> TORRE FARO</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Alias aliquid aspernatur corporis culpa delectus excepturi
-                                    facere illo impedit
-                                </h2>
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Alias aliquid aspernatur corporis culpa delectus excepturi
+                                        facere illo impedit
+                                    </h2>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -1144,32 +1313,37 @@
                 <div class="row d-flex justify-content-start" style="margin-left:15px; padding-right: 15px; margin-top: 15px">
                     <div class="col-12 col-md-6" style="padding-left:0">
                         <article style="color: #0d4a7c;">
-                            <figure>
-                                <img alt="Immagine montagne" src="media/mountain.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="Immagine montagne" src="media/mountain.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <div>
                                 <p class="article-top-title"> ABETONE</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Alias aliquid aspernatur corporis culpa delectus excepturi
-                                    facere illo impedit
-                                </h2>
-
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Alias aliquid aspernatur corporis culpa
+                                    </h2>
+                                </a>
                             </div>
                         </article>
                     </div>
                     <div class="col-12 col-md-6" style="padding-left:0">
                         <article style="color: #0d4a7c;">
-                            <figure>
-                                <img alt="foto isola con montagne a mare" src="media/mountain2.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="foto isola con montagne a mare" src="media/mountain2.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <div>
                                 <p class="article-top-title"> ELBA</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Alias aliquid aspernatur corporis culpa delectus excepturi
-                                    facere illo impedit
-                                </h2>
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Alias aliquid aspernatur corporis culpa
+                                    </h2>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -1181,16 +1355,20 @@
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-3" style="margin-left: 15px;">
                         <div class="row">
-                            <figure>
-                                <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                         </div>
                         <div class="row">
                             <div>
                                 <p class="article-top-title titleOfThree"> ELBA</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </h2>
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </h2>
+                                </a>
 
                                 <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
 
@@ -1200,16 +1378,20 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="row">
-                            <figure>
-                                <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                         </div>
                         <div class="row">
                             <div>
                                 <p class="article-top-title titleOfThree"> ELBA</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </h2>
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </h2>
+                                </a>
 
                                 <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
 
@@ -1219,16 +1401,20 @@
                     </div>
                     <div class="col-12 col-md-3" style="margin-right: 15px;">
                         <div class="row">
-                            <figure>
-                                <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="corsa in montagna 1" src="media/mountain-running.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                         </div>
                         <div class="row">
                             <div>
                                 <p class="article-top-title titleOfThree"> ELBA</p>
-                                <h2 class="of4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </h2>
+                                <a href="#">
+                                    <h2 class="of4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </h2>
+                                </a>
 
                                 <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
 
@@ -1251,56 +1437,71 @@
                     </div>
                     <div class="row d-flex justify-content-start" style="padding-top: 15px">
                         <article style="color: #0d4a7c;">
-                            <figure style="padding-right: 15px">
-                                <img alt="Immagine grande tramonto con mare e montagna" src="media/big-sunset.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure style="padding-right: 15px">
+                                    <img alt="Immagine grande tramonto con mare e montagna" src="media/big-sunset.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <div>
                                 <p class="article-top-title"> IL CASO DI ATTUALITÀ</p>
-                                <h2 class="article-title">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </h2>
+                                <a href="#">
+                                    <h2 class="article-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </h2>
+                                </a>
                             </div>
                         </article>
                     </div>
                     <div class="row d-flex justify-content-between" style="margin-top: 15px; margin-right: 0">
                         <div class="col-12 col-md-3" style="padding-left:0">
                             <article style="color: #0d4a7c;">
-                                <figure>
-                                    <img alt="Immagine sposi su barca" src="media/wedding-on-boat.jpg" class="img-fluid"/>
-                                </figure>
+                                <a href="#">
+                                    <figure>
+                                        <img alt="Immagine sposi su barca" src="media/wedding-on-boat.jpg" class="img-fluid"/>
+                                    </figure>
+                                </a>
                                 <div>
                                     <p class="article-top-title"> LAGO DI GARDA</p>
-                                    <h2 class="of4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </h2>
+                                    <a href="#">
+                                        <h2 class="of4">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </h2>
+                                    </a>
 
                                 </div>
                             </article>
                         </div>
                         <div class="col-12 col-md-3" style="padding-left:0">
                             <article style="color: #0d4a7c;">
-                                <figure>
-                                    <img alt="Immagine spiaggia di sassi al tramonto" src="media/sea-at-sunset.jpg" class="img-fluid"/>
-                                </figure>
+                                <a href="#">
+                                    <figure>
+                                        <img alt="Immagine spiaggia di sassi al tramonto" src="media/sea-at-sunset.jpg" class="img-fluid"/>
+                                    </figure>
+                                </a>
                                 <div>
                                     <p class="article-top-title"> LIVORNO</p>
-                                    <h2 class="of4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </h2>
+                                    <a href="#">
+                                        <h2 class="of4">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </h2>
+                                    </a>
                                 </div>
                             </article>
                         </div>
                         <div class="col-12 col-md-3" style="padding-left:0; padding-right: 0">
                             <article style="color: #0d4a7c;">
-                                <figure>
-                                    <img alt="Immagine spiaggia di sassi al tramonto" src="media/concert.jpg" class="img-fluid"/>
-                                </figure>
+                                <a href="#">
+                                    <figure>
+                                        <img alt="Immagine spiaggia di sassi al tramonto" src="media/concert.jpg" class="img-fluid"/>
+                                    </figure>
+                                </a>
                                 <div>
                                     <p class="article-top-title"> LUCCA</p>
-                                    <h2 class="of4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-                                    </h2>
+                                    <a href="#">
+                                        <h2 class="of4">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </h2>
+                                    </a>
                                 </div>
                             </article>
                         </div>
@@ -1311,7 +1512,7 @@
 
         <!-- sidebar -->
         <div class="col-0 col-md-3" style="margin-left: 15px" id="sideBar" >
-            <div class="row" style="margin-bottom: 50px" >
+            <div class="row" style="margin-bottom: 30px" >
                 <section>
                     <div class="under_section_title" style="margin-right: 15px" >
                         <h1 class="section-title">
@@ -1320,20 +1521,22 @@
                     </div>
                     <article>
                         <div class="container image-button-container" style="padding-left:0; padding-top: 15px;">
-                            <figure>
-                                <img alt="Immagine spiaggia" src="media/beach.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="Immagine spiaggia" src="media/beach.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <button class="btn image-button-big">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
                                 </svg>
                             </button>
                         </div>
-                        <h2 class="top-2-side">
-                            lorem ipsum dolor sit amet, consectetur <br> adipisicing elit
-                            lorem ipsum dolor sit <br> amet, consectetur adipisicing elit
-
-                        </h2>
+                        <a href="#">
+                            <h2 class="top-2-side">
+                                lorem ipsum dolor sit amet, consectetur <br> adipisicing elit
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1342,19 +1545,22 @@
                 <section>
                     <article>
                         <div class="container image-button-container" style="padding-left:0; padding-top: 15px;">
-                            <figure>
-                                <img alt="Immagine spiaggia" src="media/beach.jpg" class="img-fluid"/>
-                            </figure>
+                            <a href="#">
+                                <figure>
+                                    <img alt="Immagine spiaggia" src="media/beach.jpg" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <button class="btn image-button-big">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
                                 </svg>
                             </button>
                         </div>
-                        <h2 class="top-2-side">
-                            lorem ipsum dolor sit amet, consectetur <br> adipisicing elit
-                            lorem ipsum dolor sit<br> amet, consectetur adipisicing elit
-                        </h2>
+                        <a href="#">
+                            <h2 class="top-2-side">
+                                lorem ipsum dolor sit amet, consectetur <br> adipisicing elit
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1365,7 +1571,11 @@
                 <div class="row video-tiny-border " style="margin-bottom: 50px;">
                     <div class="col-5" style="padding: 0">
                         <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
-                            <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                            <a href="#">
+                                <figure>
+                                    <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                                </figure>
+                            </a>
                             <button class="btn image-button-tiny " >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
@@ -1374,10 +1584,38 @@
                         </div>
                     </div>
                     <div class="col-7" style="padding: 0">
-                        <h2 class="video-text-tiny">
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 class="video-text-tiny">
+                                Lorem ipsum dolor sit amet, <br>
+                                consectetur adipisicing elit.
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="row video-tiny-border " style="margin-bottom: 50px;">
+                    <div class="col-5" style="padding: 0">
+                        <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
+                            <a href="#">
+                                <figure>
+                                    <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                                </figure>
+                            </a>
+                            <button class="btn image-button-tiny " >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                                    <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-7" style="padding: 0">
+                        <a href="#">
+                            <h2 class="video-text-tiny">
+                                Lorem ipsum dolor sit amet, <br>
+                                consectetur adipisicing elit.
+                            </h2>
+                        </a>
 
                     </div>
                 </div>
@@ -1386,7 +1624,13 @@
                 <div class="row video-tiny-border " style="margin-bottom: 50px;">
                     <div class="col-5" style="padding: 0">
                         <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
-                            <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>                            <button class="btn image-button-tiny " >
+                            <a href="#">
+                                <figure>
+                                    <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                                </figure>
+                            </a>
+
+                            <button class="btn image-button-tiny " >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
                                 </svg>
@@ -1394,10 +1638,12 @@
                         </div>
                     </div>
                     <div class="col-7" style="padding: 0">
-                        <h2 class="video-text-tiny">
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 class="video-text-tiny">
+                                Lorem ipsum dolor sit amet, <br>
+                                consectetur adipisicing elit.
+                            </h2>
+                        </a>
 
                     </div>
                 </div>
@@ -1406,7 +1652,13 @@
                 <div class="row video-tiny-border " style="margin-bottom: 50px;">
                     <div class="col-5" style="padding: 0">
                         <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
-                            <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>                            <button class="btn image-button-tiny " >
+                           <a href="#">
+                                <figure>
+                                    <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                                </figure>
+                           </a>
+
+                            <button class="btn image-button-tiny " >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
                                 </svg>
@@ -1414,31 +1666,12 @@
                         </div>
                     </div>
                     <div class="col-7" style="padding: 0">
-                        <h2 class="video-text-tiny">
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing elit.
-                        </h2>
-
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="row video-tiny-border " style="margin-bottom: 50px;">
-                    <div class="col-5" style="padding: 0">
-                        <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
-                            <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>                            <button class="btn image-button-tiny " >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-                                    <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-7" style="padding: 0">
-                        <h2 class="video-text-tiny">
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing elit.
-                        </h2>
-
+                        <a href="#">
+                            <h2 class="video-text-tiny">
+                                Lorem ipsum dolor sit amet, <br>
+                                consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -1446,7 +1679,12 @@
                 <div class="row video-tiny-border " style="margin-bottom: 45px;">
                     <div class="col-5" style="padding: 0">
                         <div class="container image-button-container" style="align-self:start;margin:0;padding:0;">
-                            <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                            <a href="#">
+                                <figure>
+                                    <img src="media/street.jpg" alt="terzo video" class="img-fluid"/>
+                                </figure>
+                            </a>
+
                             <button class="btn image-button-tiny " >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
                                     <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
@@ -1455,11 +1693,12 @@
                         </div>
                     </div>
                     <div class="col-7" style="padding: 0">
-                        <h2 class="video-text-tiny">
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing elit.
-                        </h2>
-
+                        <a href="#">
+                            <h2 class="video-text-tiny">
+                                Lorem ipsum dolor sit amet, <br>
+                                consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -1473,13 +1712,17 @@
                         </h1>
                     </div>
                     <article style="padding-left:0; padding-top: 15px;">
-                        <figure>
-                            <img alt="Immagine scrivania con oggetti da ufficio" src="media/desk.jpg" class="img-fluid"/>
-                        </figure>
+                        <a href="#">
+                            <figure>
+                                <img alt="Immagine scrivania con oggetti da ufficio" src="media/desk.jpg" class="img-fluid"/>
+                            </figure>
+                        </a>
                         <p style="color: #0d4a7c; font-weight: bold">BUONGIORNO</p>
-                        <h2 style="font-size: 24px; font-weight: bold">
-                            Lorem ipsum
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 24px; font-weight: bold">
+                                Lorem ipsum
+                            </h2>
+                        </a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </article>
                 </section>
@@ -1488,9 +1731,11 @@
                 <section>
 
                     <article style="padding-left:0; padding-top: 15px;">
-                        <h2 style="font-size: 20px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 20px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1498,9 +1743,11 @@
                 <section>
 
                     <article style="padding-left:0; padding-top: 15px;">
-                        <h2 style="font-size: 20px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 20px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1508,9 +1755,11 @@
                 <section>
 
                     <article style="padding-left:0; padding-top: 15px;">
-                        <h2 style="font-size: 20px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 20px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1518,12 +1767,16 @@
             <div class="row" style="margin-bottom: 30px" >
                 <section>
                     <article style="padding-left:0; padding-top: 15px;">
-                        <figure>
-                            <img alt="Immagine ritoccata di papavero" src="media/poppy.jpg" class="img-fluid"/>
-                        </figure>
-                        <h2 style="font-size: 24px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <figure>
+                                <img alt="Immagine ritoccata di papavero" src="media/poppy.jpg" class="img-fluid"/>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <h2 style="font-size: 24px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                         <p class="font-author-editoriale"> <b>MARIO ROSSI</b> <br></p>
                     </article>
                 </section>
@@ -1533,9 +1786,11 @@
                 <section>
 
                     <article style="padding-left:0; padding-top: 15px;">
-                        <h2 style="font-size: 20px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 20px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1544,9 +1799,11 @@
                 <section>
 
                     <article style="padding-left:0; padding-top: 15px;">
-                        <h2 style="font-size: 20px; font-weight: bold">
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </h2>
+                        <a href="#">
+                            <h2 style="font-size: 20px; font-weight: bold">
+                                Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
+                            </h2>
+                        </a>
                     </article>
                 </section>
             </div>
@@ -1561,7 +1818,7 @@
 
             <div class="col-3" style="margin-right: 50px">
                 <div>
-                    <a href="index.html" style="margin-right: 15px" >
+                    <a href="#" style="margin-right: 15px" >
                         <img src="https://placehold.co/160x20" alt="placeholder logo la stampa footer"/>
                     </a>
                 </div>
@@ -1664,14 +1921,8 @@
 
 </footer>
 
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
