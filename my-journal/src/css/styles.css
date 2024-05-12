@@ -1,5 +1,10 @@
 a{
   background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #527D9F;
 }
 * {
   margin: 0;
@@ -33,6 +38,8 @@ body{
 }
 #topHeader{
   background: #073860;
+  color: white;
+  font-weight: bold;
 }
 
 .navbar-blue-background{
@@ -43,11 +50,18 @@ body{
 .nav-bottom-border{
   border-top: 1px solid #CCC;
   border-bottom: 2px solid #CCC;
+  color: #16507E;
+  font-weight: bold;
 }
 .nav-bottom-li-border{
   border-right: 1px solid #CCC;
 }
 
+.match-style{
+  background: #F0F0F0;
+  font-weight: bold;
+  font-size: 10px;
+}
 #soccer-bar{
   overflow: hidden;
 }
@@ -72,7 +86,7 @@ body{
   padding:0;
   margin:0;
 }
-@media only screen and (max-width: 1155px) {
+@media only screen and (max-width: 1220px) {
 
   #soccer-bar{
     display:none;
@@ -83,7 +97,6 @@ body{
   }
 
 }
-
 
 #firstTopArticle{
   display: none;
@@ -122,6 +135,9 @@ body{
     margin-left: 15px;
     padding-left: 15px;
     padding-right: 0;
+  }
+  #footer{
+    display: none;
   }
 }
 
