@@ -1,3 +1,6 @@
+
+/* General rules*/
+
 a{
   background-color: transparent;
   text-decoration: none;
@@ -18,6 +21,9 @@ html{
 body{
   background-color: #F2F6F9;
 }
+
+/* rules for the main content in the central body */
+
 .standard{
   width: 100%;
   max-width: 1260px;
@@ -41,12 +47,10 @@ body{
   color: white;
   font-weight: bold;
 }
-
 .navbar-blue-background{
   background: #073860;
 
 }
-
 .nav-bottom-border{
   border-top: 1px solid #CCC;
   border-bottom: 2px solid #CCC;
@@ -56,7 +60,6 @@ body{
 .nav-bottom-li-border{
   border-right: 1px solid #CCC;
 }
-
 .match-style{
   background: #F0F0F0;
   font-weight: bold;
@@ -86,25 +89,23 @@ body{
   padding:0;
   margin:0;
 }
+
+/* media queries for the responsive design */
+
 @media only screen and (max-width: 1220px) {
 
   #soccer-bar{
     display:none;
   }
-
   #mobile-soccer-bar{
     display: block;
   }
-
 }
-
 #firstTopArticle{
   display: none;
 }
 
-
 @media only screen and (max-width: 768px) {
-
   #topHeader{
     background: white;
   }
@@ -122,10 +123,6 @@ body{
   }
   #sideBar{
     display: none;
-    /*position: fixed;
-    top: 0;
-    left: 0;*/
-
   }
   #firstTopArticle2{
     display: none;
@@ -140,6 +137,8 @@ body{
     display: none;
   }
 }
+
+/* rules for the sidebar and the central body content */
 
 #list{
   color: white;
@@ -265,6 +264,9 @@ body{
   border-bottom: 1px solid #CCC;
   padding-bottom: 15px;
 }
+
+/* rules for the footer*/
+
 #footer{
   background: #073860;
   color: white;
