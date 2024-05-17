@@ -5,25 +5,26 @@ a{
   background-color: transparent;
   text-decoration: none;
   color: black;
+  padding: 0;
+  margin: 0;
 }
+
 a:hover{
   color: #527D9F;
 }
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 html{
   font-size: small;
 }
 body{
   background-color: #F2F6F9;
 }
-
 /* rules for the main content in the central body */
-
 .standard{
   width: 100%;
   max-width: 1260px;
@@ -33,7 +34,7 @@ body{
   max-width: 100%;
 }
 
-#mobileHeader{
+#mobile-header{
   display: none;
 }
 
@@ -42,16 +43,26 @@ body{
   overflow-x: auto;
   flex-wrap: nowrap;
 }
-#topHeader{
+#top-header{
   background: #073860;
   color: white;
   font-weight: bold;
 }
+.top-nav-color{
+  color: white;
+}
+.top-nav-color a:hover{
+    color: white;
+    text-decoration: none;
+}
+.top-nav-color a:visited{
+    color: white;
+    text-decoration: none;
+}
 .navbar-blue-background{
   background: #073860;
-
 }
-.nav-bottom-border{
+.nav-border{
   border-top: 1px solid #CCC;
   border-bottom: 2px solid #CCC;
   color: #16507E;
@@ -68,6 +79,9 @@ body{
 #soccer-bar{
   overflow: hidden;
 }
+.soccer-matchTime-backColor{
+  background-color: white;
+}
 #mobile-soccer-bar{
   display: none;
 }
@@ -81,7 +95,6 @@ body{
   width: 96px;
   height:48px;
 }
-
 #header-collapse{
   width : 100%; max-width: 100%; resize: horizontal;
 }
@@ -90,61 +103,13 @@ body{
   margin:0;
 }
 
-/* media queries for the responsive design */
-
-@media only screen and (max-width: 1220px) {
-
-  #soccer-bar{
-    display:none;
-  }
-  #mobile-soccer-bar{
-    display: block;
-  }
-}
-#firstTopArticle{
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  #topHeader{
-    background: white;
-  }
-  .navbar-blue-background{
-    background: white;
-  }
-  #header-collapse{
-    display: none;
-  }
-  #mobileHeader{
-    display: block;
-  }
-  #mobile-soccer-bar{
-    display: block;
-  }
-  #sideBar{
-    display: none;
-  }
-  #firstTopArticle2{
-    display: none;
-  }
-  #firstTopArticle{
-    display: block;
-    margin-left: 15px;
-    padding-left: 15px;
-    padding-right: 0;
-  }
-  #footer{
-    display: none;
-  }
-}
-
 /* rules for the sidebar and the central body content */
 
 #list{
   color: white;
 }
 
-#topDrop{
+#top-drop{
   width:1050px;
   height:200px;
 }
@@ -188,7 +153,6 @@ body{
   margin-bottom: 0;
   padding-bottom:0;
 }
-
 .article-title{
   font-size:42px;
   font-weight: bold;
@@ -227,7 +191,6 @@ body{
 .top-2-side{
   font-size: 20px;
   font-weight: bold;
-
 }
 .image-button-tiny{
   position: absolute;
@@ -268,11 +231,94 @@ body{
 /* rules for the footer*/
 
 #footer{
-  background: #073860;
+  background: #032B4C;
   color: white;
   text-decoration: white;
 }
 #footer a{
     color: white;
     text-decoration: none;
+}
+.footer-element{
+  margin-bottom: 20px;
+}
+
+/* media queries for the responsive design */
+
+@media only screen and (max-width: 1220px) {
+
+  #soccer-bar{
+    display:none;
+  }
+  #mobile-soccer-bar{
+    display: block;
+  }
+}
+#first-top-article{
+  display: none;
+}
+
+#bottom-mobile-footer{
+  display: none;
+}
+#copyright{
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 30px
+}
+@media only screen and (max-width: 768px) {
+  #top-header{
+    background: white;
+  }
+  .navbar-blue-background{
+    background: white;
+  }
+  #header-collapse{
+    display: none;
+  }
+  #mobile-header{
+    display: block;
+  }
+  #mobile-soccer-bar{
+    display: block;
+  }
+  .article-title{
+    font-size: 30px;
+  }
+  #sideBar{
+    display: none;
+  }
+  #first-top-article2{
+    display: none;
+  }
+  #first-top-article{
+    display: block;
+
+  }
+  #top-footer{
+    display: none;
+  }
+  #bottom-mobile-footer{
+    display: block;
+  }
+  #copyright{
+    text-align: start;
+    margin-left: 15px;
+  }
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+#fix-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000; /* to assure it has the highest */
+  background-color: #ECF4FA;
+  border-bottom: 1px solid #CCC;
 }
