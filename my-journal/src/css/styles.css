@@ -243,6 +243,9 @@ body{
   margin-bottom: 20px;
 }
 
+
+
+
 /* media queries for the responsive design */
 
 @media only screen and (max-width: 1220px) {
@@ -254,11 +257,13 @@ body{
     display: block;
   }
 }
+
+
 #first-top-article{
   display: none;
 }
 
-#bottom-mobile-footer{
+.bottom-mobile-footer{
   display: none;
 }
 #copyright{
@@ -268,6 +273,8 @@ body{
   padding-top: 15px;
   padding-bottom: 30px
 }
+
+
 @media only screen and (max-width: 768px) {
   #top-header{
     background: white;
@@ -300,7 +307,7 @@ body{
   #top-footer{
     display: none;
   }
-  #bottom-mobile-footer{
+  .bottom-mobile-footer{
     display: block;
   }
   #copyright{
@@ -308,6 +315,10 @@ body{
     margin-left: 15px;
   }
 }
+
+
+/* rules for the "scrolling" headers */
+
 .hidden{
   display: none;
 }
@@ -315,6 +326,14 @@ body{
   display: block;
 }
 #fix-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000; /* to assure it has the highest */
+  background-color: #ECF4FA;
+  border-bottom: 1px solid #CCC;
+}
+#mobile-scroll-header{
   position: fixed;
   top:0;
   width: 100%;

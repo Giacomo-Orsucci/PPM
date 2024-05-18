@@ -202,7 +202,7 @@
 
                         <li class="nav-item">
                             <div style="margin-top: 30px;">
-                                <a href="#" style="margin-right: 15px" >
+                                <a href="#" style="margin-right: 40px" >
                                     <figure>
                                         <img src="https://placehold.co/22x22" alt="Place holder s logo"/>
                                     </figure>
@@ -304,7 +304,7 @@
     </div>
 </header>
 
-<!-- navbar that appears when scrolling down in from medium screen -->
+<!-- navbar that appears when scrolling down from medium screen -->
 <header class="hidden" id="fix-header">
     <div class="d-flex justify-content-center" >
         <div class="d-flex standard justify-content-center"  >
@@ -357,6 +357,80 @@
         </div>
     </div>
 </header>
+
+
+<!-- navbar that appears when scrolling down in mobile devices-->
+
+<header class="hidden" id="mobile-scroll-header">
+
+    <!-- mobile scroll top header -->
+    <div class=" d-flex justify-content-center navbar-row-collapse" >
+        <div class="d-flex standard" style="border-bottom: 1px solid #C4D7E5; max-height: 40px;" >
+            <nav class="navbar navbar-expand standard" >
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" title="ABBONATI" href="#" style="color: #073860; margin-left: 15px; font-weight: bold">
+                                ABBONATI
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="collapse navbar-collapse  justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <div style="margin-top: 30px;">
+                                <a href="#" style="margin-right: 40px" >
+                                    <figure>
+                                        <img src="https://placehold.co/22x22" alt="Place holder s logo"/>
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- mobile bottom header -->
+    <div class="d-flex justify-content-center " style="padding-top: 10px; background-color: #ECF4FA ">
+        <div class="d-flex justify-content-between standard" >
+            <div>
+                <a class="navbar-brand" href="#" style="margin-left: 15px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </a>
+                <a class="navbar-brand" href="#" style="margin-left: 15px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </a>
+            </div>
+            <div >
+                <a href="#">
+                    <figure>
+                        <img src="https://placehold.co/176x21" alt="Place holder logo giornale per mobile"/>
+                    </figure>
+                </a>
+            </div>
+
+            <div style="margin-right: 15px">
+                <a class="nav-link" href="#" style="font-weight: bold">
+                    ACCEDI
+                </a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
 
 <!-- here starts the main content -->
 
@@ -1722,7 +1796,7 @@
 <!-- footer -->
 
 <footer style="width: 100%" id="footer">
-    <div class="container standard justify-content-center" style="border-bottom: 1px solid white; padding-bottom: 30px">
+    <div class="container standard justify-content-center" style="padding-bottom: 30px">
         <div class="row padding-margin-0" style="padding-top: 50px">
             <div class="col-3 padding-margin-0" style="margin-right: 50px" id="top-footer">
                 <div>
@@ -1738,7 +1812,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-9 col-md-6" style="font-weight: bold;">
+            <div class="col-12 col-md-6" style="font-weight: bold;">
                 <div class="row ">
                     <div class="col-6 col-lg-4 footer-element">
                         <a href="#">
@@ -1766,13 +1840,13 @@
                             POLITICA
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 footer-element" style="margin-bottom: 50px;">
+                    <div class="col-6 col-lg-4 footer-element" style="margin-bottom: 30px;">
                         <a href="#">
                             TORINO
                         </a>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12" style="margin-bottom: 20px">
                         <hr style="border-top: 1px solid white;">
                     </div>
 
@@ -1811,27 +1885,36 @@
                             Dati Societari
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 footer-element">
+                    <div class="col-6 col-lg-4 footer-element" style="margin-bottom: 30px;">
                         <a href="#">
                             Privacy
                         </a>
+                    </div>
+                    <div class="col-12 bottom-mobile-footer">
+                        <hr style="border-top: 1px solid white;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-left:15px; margin-top:20px; margin-right: 50px; border-bottom: 1px solid white" id="bottom-mobile-footer">
+    <div class="col-12 bottom-mobile-footer" style="margin-left:15px; margin-right: 50px;" >
         <div>
             <a href="#" style="margin-right: 15px" >
                 <img src="https://placehold.co/160x20" alt="placeholder logo la stampa footer"/>
             </a>
         </div>
+
         <div style="font-size: 15px; margin-top: 35px">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Accusamus iure nemo officia placeat praesentium veritatis!
                 Aperiam asperiores deleniti dolorem.
             </p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center" style="padding-left: 15px; padding-right: 15px">
+        <div class="col-12 col-md-7">
+            <hr style="border-top: 1px solid white;">
         </div>
     </div>
     <p class="padding-margin-0" id="copyright">
