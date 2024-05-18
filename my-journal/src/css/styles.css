@@ -1,5 +1,5 @@
 
-/* General rules*/
+/*general rules*/
 
 a{
   background-color: transparent;
@@ -244,8 +244,6 @@ body{
 }
 
 
-
-
 /* media queries for the responsive design */
 
 @media only screen and (max-width: 1220px) {
@@ -275,7 +273,7 @@ body{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #top-header{
     background: white;
   }
@@ -316,6 +314,16 @@ body{
   }
 }
 
+@media only screen and (max-width: 300px) {
+
+  #search-mobile{
+   display: none;
+  }
+  #menu-mobile{
+    width: 20px;
+    height: 20px;
+  }
+}
 
 /* rules for the "scrolling" headers */
 

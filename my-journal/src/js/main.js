@@ -29,7 +29,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('resize', function() {
     windowWidth = window.innerWidth;
-    if(windowWidth < dimensionTrigger){
+    if(windowWidth <= dimensionTrigger){
         document.getElementById('fix-header').classList.remove('show');
         document.getElementById('fix-header').classList.add('hidden');
     }
