@@ -10,4 +10,4 @@ Il sito da me ideato non fa uso di alcun contenuto originale e pertanto soggetto
 Il progetto è stato testato su più browser, più formati di schermo e più dispositivi e risulta in linea con il comportamento evidenziato dal
 sito originale e con l'esplicita richiesta di responsiveness.
 
-Al momento il sito può essere visionato al seguente indirizzo: [osuccigiacomoppm](http://orsuccigiacomoppm.altervista.org/).
+Al momento il sito può essere visionato al seguente indirizzo: [osuccigiacomoppm](https://orsuccigiacomoppm.altervista.org/).
